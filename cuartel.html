@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otro día en la oficina - Cuartel</title>
+</head>
+<body>
+
+    <header>
+        <h1>Otro día en la oficina</h1>
+        <p>El informe final ha llegado.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Regreso al cuartel</h2>
+            <p>
+                La misión ha sido un éxito.  
+                Te presentas en el cuartel para el informe final.  
+            </p>
+            <p>
+                <strong>"Objetivo eliminado con éxito"</strong>, dice tu superior mientras coloca un archivo en la mesa.  
+            </p>
+            <p>
+                Tomas la foto del expediente.  
+                <strong>Tu estómago se revuelve.</strong>  
+            </p>
+            <p>
+                <strong>Es tu hermano.</strong>  
+                No hay duda.  
+            </p>
+        </section>
+
+        <section>
+            <h2>Informe de Misión</h2>
+            <p>Antes de finalizar, completa el siguiente informe para archivar la operación.</p>
+
+            <form action="submit.php" method="POST">
+                <label for="nombre">Nombre del Agente:</label>
+                <input type="text" id="nombre" name="nombre" required><br>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="evaluacion">Evaluación de la misión:</label>
+                <select id="evaluacion" name="evaluacion">
+                    <option value="exito">Éxito</option>
+                    <option value="fallo">Fallo</option>
+                    <option value="complicado">Complicado</option>
+                </select><br>
+
+                <label for="comentarios">Comentarios adicionales:</label>
+                <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br>
+
+                <label>¿Requiere seguimiento?</label><br>
+                <input type="radio" id="si" name="seguimiento" value="si">
+                <label for="si">Sí</label>
+
+                <input type="radio" id="no" name="seguimiento" value="no">
+                <label for="no">No</label><br>
+
+                <label>Marque si desea recibir actualizaciones:</label>
+                <input type="checkbox" name="actualizaciones" value="si"><br>
+
+                <button type="submit">Enviar Informe</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>¿Qué harás?</h2>
+            <ul>
+                <li><a href="final1.html">Aceptar la realidad y seguir adelante.</a></li>
+                <li><a href="final2.html">Exigir respuestas y cuestionar la misión.</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Otro día en la oficina - Samuel Mejía</p>
+    </footer>
+
+</body>
+</html>
